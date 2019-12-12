@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Didact+Gothic);html {
+  background-color: #E7F3FF; }
+
+body {
+  font-family: "Didact Gothic", sans-serif; }
+
+.container {
+  max-width: 768px; }
+
+.blue-text {
+  color: #159be9; }
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: #000000; }
+
+h1 {
+  font-family: "Carrois Gothic SC", sans-serif; }
+
+.sub-heading {
+  font-size: 20px; }
+
+input:not([type]) {
+  border-bottom: 1px solid #ffffff;
+  color: #000000; }
+  input:not([type]):focus {
+    border-bottom: 1px solid #159be9 !important;
+    box-shadow: 0 1px 0 0 #000000 !important; }
+
+::placeholder {
+  color: #808080; }
+
+.btn {
+  margin-left: 12px; }
+
+.card-action {
+  border-top: 1px solid #ffffff !important; }
+
+.checkbox-container {
+  display: flex;
+  flex-direction: row; }
+  .checkbox-container label {
+    margin: 20px;
+    font-size: 16px;
+    flex-grow: 1; }
+    .checkbox-container label select {
+      display: block; }
+
+.collection .collection-item {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #000000; }
+
+.blue-link {
+  color: #159be9;
+  transition: color 0.5s ease; }
+  .blue-link:hover {
+    color: #003366; }
+
+.fav-container {
+  color: #ffffff; }
+
+.type-container {
+  display: flex;
+  flex-direction: row; }
+  .type-container span {
+    margin: 10px !important; }
+
+.devicon {
+  color: #ffffff;
+  font-size: 70px;
+  transition: color 0.5s ease; }
+  .devicon:hover {
+    color: #159be9; }
+
+.icon-list li {
+  padding: 12px 0 12px 0; }
+
+@media only screen and (min-device-width: 540px) {
+  .icon-list li {
+    display: inline-block;
+    padding: 0;
+    margin-left: 24px; } }

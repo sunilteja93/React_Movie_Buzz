@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Didact+Gothic);
+
+$lightblue: #E7F3FF;
+$darkblue: #003366;
+$white: #ffffff;
+$blue: #159be9;
+$black: #000000;
+$gray: #808080;
+
+$spacing-size-1: 12px;
+$spacing-size-2: 24px;
+$icon-size: 70px;
+$sub-heading-font-size: 20px;
+
+$hover-transition: color 0.5s ease;
+
+$carrois-gothic: 'Carrois Gothic SC',
+sans-serif;
+$didact-gothic: 'Didact Gothic',
+sans-serif;
+
+html {
+    background-color: $lightblue;
+}
+
+body {
+    font-family: $didact-gothic;
+}
+
+.container {
+    max-width: 768px;
+}
+
+.blue-text {
+    color: $blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    color: $black;
+}
+
+h1 {
+    font-family: $carrois-gothic;
+}
+
+.sub-heading {
+    font-size: $sub-heading-font-size;
+}
+
+input:not([type]) {
+    border-bottom: 1px solid $white;
+    color: $black;
+
+    &:focus {
+        border-bottom: 1px solid $blue !important;
+        box-shadow: 0 1px 0 0 $black !important;
+    }
+}
+
+::placeholder {
+  color: $gray;
+}
+
+.btn {
+    margin-left: $spacing-size-1;
+}
+
+.card-action {
+    border-top: 1px solid $white !important;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: row;
+
+    label {
+        margin: 20px;
+        font-size: 16px;
+        flex-grow: 1;
+
+        select {
+            display: block;
+        }
+    }
+}
+
+.collection {
+    .collection-item {
+        background-color: rgba(255, 255, 255, 0.25);
+        color: $black;
+    }
+}
+
+.blue-link {
+    color: $blue;
+    transition: $hover-transition;
+
+    &:hover {
+        color: $darkblue;
+    }
+}
+
+.fav-container {
+    color: #ffffff;
+}
+
+.type-container {
+    display: flex;
+    flex-direction: row;
+
+    span {
+        margin: 10px !important;
+    }
+}
+
+.devicon {
+    color: $white;
+    font-size: $icon-size;
+    transition: $hover-transition;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+.icon-list {
+    li {
+        padding: $spacing-size-1 0 $spacing-size-1 0;
+    }
+}
+
+@media only screen and (min-device-width: 540px) {
+    .icon-list {
+        li {
+            display: inline-block;
+            padding: 0;
+            margin-left: $spacing-size-2;
+        }
+    }
+}
